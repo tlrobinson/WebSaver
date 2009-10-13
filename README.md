@@ -3,8 +3,16 @@ WebSaver: A WebKit-based Mac OS X screensaver
 
 A Mac OS X screensaver which simply embeds WebKit to display a webpage or JavaScript application. Perfect for Canvas animations.
 
+By default WebSaver comes with Tom Theisen's excellent "spread" Canvas experiment: http://tomtheisen.com/spread/
+
 Instructions
 ------------
+
+Install the pre-built version of WebSaver by double-clicking "WebSaver/build/Release/Web.saver".
+
+Replace "Web.saver/Contents/Resources/index.html" with your own web page or application.
+
+To build from source, do the following:
 
 1. Open WebSaver.xcodeproj in Xcode.
 
