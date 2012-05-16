@@ -13,6 +13,7 @@
 @interface WebSaverView : ScreenSaverView 
 {
 	IBOutlet id configSheet;
+	IBOutlet id url;
 	WebView *webView;
 }
 
