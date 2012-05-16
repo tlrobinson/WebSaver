@@ -25,7 +25,26 @@
 
 - (BOOL)hasConfigureSheet
 {
-    return NO;
+	return YES;
+}
+
+- (NSWindow *)configureSheet
+{
+	if (!configSheet)
+	{
+		if (![NSBundle loadNibNamed:@"ConfigureSheet" owner:self])
+		{
+			NSLog( @"Failed to load configure sheet." );
+			NSBeep();
+		}
+	}
+
+	return configSheet;
+}
+
+- (IBAction)cancelClick:(id)sender
+{
+	[[NSApplication sharedApplication] endSheet:configSheet];
 }
 
 @end
