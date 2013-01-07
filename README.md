@@ -5,6 +5,8 @@ A Mac OS X screensaver which simply embeds WebKit to display a webpage or JavaSc
 
 By default WebSaver comes with Tom Theisen's excellent "spread" Canvas experiment: http://tomtheisen.com/spread/
 
+This version includes a simple Preferences sheet.
+
 Instructions
 ------------
 
@@ -16,26 +18,20 @@ To build from source, do the following:
 
 1. Open WebSaver.xcodeproj in Xcode.
 
-2. Modify or replace index.html.
+2. Build.
 
-3. Build.
-
-4. Double-click the built Web.saver to install.
+3. Double-click the built Web.saver to install.
 
 Notes
 -----
 
 * Change the "Product Name" in the "Web" target if you are distributing a screensaver to prevent conflicts with others.
 
-TODO
-----
-
-* Integrate preferences.
-
 License
 -------
 
 Copyright (c) 2009, Thomas Robinson <http://tlrobinson.net/>
+Copyright (c) 2012, Senseg Ltd <http://www.senseg.com>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -45,11 +41,11 @@ modification, are permitted provided that the following conditions are met:
     * Redistributions in binary form must reproduce the above copyright
       notice, this list of conditions and the following disclaimer in the
       documentation and/or other materials provided with the distribution.
-    * Neither the name of the Thomas Robinson nor the
+    * Neither the name of the Thomas Robinson, Senseg nor the
       names of its contributors may be used to endorse or promote products
       derived from this software without specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY Thomas Robinson ''AS IS'' AND ANY
+THIS SOFTWARE IS PROVIDED BY Thomas Robinson AND/OR Senseg ''AS IS'' AND ANY
 EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL Thomas Robinson BE LIABLE FOR ANY
