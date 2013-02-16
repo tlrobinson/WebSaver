@@ -3,7 +3,9 @@ WebSaver: A WebKit-based Mac OS X screensaver
 
 A Mac OS X screensaver which simply embeds WebKit to display a webpage or JavaScript application. Perfect for Canvas animations.
 
-By default WebSaver comes with Tom Theisen's excellent "spread" Canvas experiment: http://tomtheisen.com/spread/
+You can specify a web url as screen saver. 
+
+Here are some interesting links: http://gaohao-php-html5-learning.herokuapp.com/ScreenSaver/
 
 This version includes a simple Preferences sheet.
 
