@@ -3,9 +3,7 @@ WebSaver: A WebKit-based Mac OS X screensaver
 
 A Mac OS X screensaver which simply embeds WebKit to display a webpage or JavaScript application. Perfect for Canvas animations.
 
-You can specify a web url as screen saver. 
-
-Here are some interesting links: http://gaohao-php-html5-learning.herokuapp.com/ScreenSaver/
+You can specify a web url as screen saver.
 
 This version includes a simple Preferences sheet.
 
@@ -33,7 +31,9 @@ License
 -------
 
 Copyright (c) 2013, Thomas Robinson <http://tlrobinson.net/>
+
 Copyright (c) 2012, Senseg Ltd <http://www.senseg.com>
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
