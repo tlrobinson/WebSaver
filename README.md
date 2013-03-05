@@ -32,7 +32,7 @@ Notes
 License
 -------
 
-Copyright (c) 2009, Thomas Robinson <http://tlrobinson.net/>
+Copyright (c) 2013, Thomas Robinson <http://tlrobinson.net/>
 Copyright (c) 2012, Senseg Ltd <http://www.senseg.com>
 All rights reserved.
 

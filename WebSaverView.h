@@ -4,7 +4,7 @@
 //
 //  Created by Thomas Robinson on 10/13/09.
 //  Modified by Pekka Nikander in May 2012.
-//  Copyright (c) 2009, 280 North. All rights reserved.
+//  Copyright (c) 2013, Thomas Robinson. All rights reserved.
 //  Copyright (c) 2012, Senseg.  All rights reserved.
 //
 
@@ -15,8 +15,19 @@
 @interface WebSaverView : ScreenSaverView 
 {
 	IBOutlet id configSheet;
-	IBOutlet id url;
+
+	IBOutlet NSTextField *url;
+	IBOutlet NSTextView *userScript;
+	IBOutlet NSTextField *refreshInterval;
+	IBOutlet NSPopUpButton *refreshUnits;
+
+    ScreenSaverDefaults *defaults;
 	WebView *webView;
+    NSTimer *refreshTimer;
 }
+
+- (void)loadWebView;
+
+- (IBAction)changeRefreshUnits:(id)sender;
 
 @end

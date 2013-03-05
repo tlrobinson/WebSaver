@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D856DCE10845D98006C781A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D856DCD10845D98006C781A /* WebKit.framework */; };
-		4D856DF31084601E006C781A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4D856DF21084601E006C781A /* index.html */; };
 		8D255AC70486D3F9007BF209 /* WebSaver_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA80370C50100C91783 /* WebSaver_Prefix.pch */; };
 		8D255AC80486D3F9007BF209 /* WebSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F50079790118B23001CA0E54 /* WebSaverView.h */; };
 		8D255ACA0486D3F9007BF209 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -26,9 +25,8 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCFA80370C50100C91783 /* WebSaver_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSaver_Prefix.pch; sourceTree = "<group>"; };
 		4D856DCD10845D98006C781A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
-		4D856DF21084601E006C781A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		8D255AD20486D3F9007BF209 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D255AD30486D3F9007BF209 /* GitWeb.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitWeb.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D255AD30486D3F9007BF209 /* Web.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Web.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4A502A1563C91F005E4CCA /* ConfigureSheet.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ConfigureSheet.nib; sourceTree = "<group>"; };
 		F50079790118B23001CA0E54 /* WebSaverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSaverView.h; sourceTree = "<group>"; };
 		F500797A0118B23001CA0E54 /* WebSaverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSaverView.m; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				EA4A502A1563C91F005E4CCA /* ConfigureSheet.nib */,
-				4D856DF21084601E006C781A /* index.html */,
 				8D255AD20486D3F9007BF209 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 			);
@@ -111,7 +108,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D255AD30486D3F9007BF209 /* GitWeb.saver */,
+				8D255AD30486D3F9007BF209 /* Web.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,7 +153,7 @@
 			name = Web;
 			productInstallPath = "$(HOME)/Library/Screen Savers";
 			productName = WebSaver;
-			productReference = 8D255AD30486D3F9007BF209 /* GitWeb.saver */;
+			productReference = 8D255AD30486D3F9007BF209 /* Web.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D255ACA0486D3F9007BF209 /* InfoPlist.strings in Resources */,
-				4D856DF31084601E006C781A /* index.html in Resources */,
 				EA4A502B1563C91F005E4CCA /* ConfigureSheet.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +236,7 @@
 				GCC_PREFIX_HEADER = WebSaver_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_NAME = GitWeb;
+				PRODUCT_NAME = Web;
 				WRAPPER_EXTENSION = saver;
 				ZERO_LINK = YES;
 			};
@@ -256,7 +252,7 @@
 				GCC_PREFIX_HEADER = WebSaver_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_NAME = GitWeb;
+				PRODUCT_NAME = Web;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -274,7 +270,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PUBLIC_HEADERS_FOLDER_PATH = Info.plist;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -290,7 +286,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PUBLIC_HEADERS_FOLDER_PATH = Info.plist;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
