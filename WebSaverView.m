@@ -26,8 +26,8 @@ static NSString * const USERSCRIPT_KEY = @"UserScript";
 static NSString * const REFRESH_INTERVAL_KEY = @"RefreshInterval";
 static NSString * const REFRESH_UNITS_KEY = @"RefreshUnits";
 
-static NSString * const DEFAULT_URL = @"https://github.com/tlrobinson/WebSaver";
-static NSString * const DEFAULT_USERSCRIPT = @"document.body.style.backgroundColor = 'green';";
+static NSString * const DEFAULT_URL = @"http://webglsamples.googlecode.com/hg/aquarium/aquarium.html";
+static NSString * const DEFAULT_USERSCRIPT = @"/*document.body.style.backgroundColor = 'green';*/";
 static double const DEFAULT_REFRESH_INTERVAL = 1.0;
 static long const DEFAULT_REFRESH_UNITS = REFRESH_MINUTES;
 
@@ -47,6 +47,10 @@ static long const DEFAULT_REFRESH_UNITS = REFRESH_MINUTES;
 									nil]];
 
 		webView = [[WebView alloc] initWithFrame:[self bounds] frameName:nil groupName:nil];
+        WebPreferences *p = [webView preferences];
+        if ([p respondsToSelector:@selector(setWebGLEnabled:)]) {
+            [p setWebGLEnabled:YES];
+        }
         [webView setFrameLoadDelegate:self];
 		[self addSubview:webView];
 
