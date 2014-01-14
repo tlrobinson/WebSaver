@@ -26,6 +26,7 @@ Notes
 -----
 
 * Change the "Product Name" in the "Web" target if you are distributing a screensaver to prevent conflicts with others.
+* thumbnail.png – 90 x 58 pixels | thumbnail@2x.png – 180 x 116 pixels
 
 License
 -------
